@@ -21,6 +21,7 @@ MuscleGroup.init(
     },
     workoutId: {
       type: DataTypes.INTEGER,
+      allowNull: false,
       references: {
         model: 'workout',
         key: 'id',
