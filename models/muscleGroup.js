@@ -19,7 +19,7 @@ MuscleGroup.init(
       type: DataTypes.TEXT,
       allowNull: false,
     },
-    workout_id: {
+    workoutId: {
       type: DataTypes.INTEGER,
       references: {
         model: 'workout',
