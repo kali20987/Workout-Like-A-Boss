@@ -7,7 +7,7 @@ const muscleGroupData = [
         workout_id: 1
     },
     {
-        exerciseTitle: 'Romanian DeadLift',
+        exerciseTitle: 'Romanian Deadlift',
         instructions: `Start from a standing position, with either a barbell or dumbells in each hand. Slowly hindge your hips back while keeping your back straight and the weight directly against your legs. Once your hips are fully hidged back, drive through your glutes back into a standing position.`,
         workout_id: 1
     },
