@@ -8,8 +8,7 @@ class QC extends Model {
   // }
 }
 
-QC.init(
-  {
+QC.init({
     id: {
       type: DataTypes.INTEGER,
       allowNull: false,
@@ -19,14 +18,19 @@ QC.init(
     excersie: {
       type: DataType.STRING,
       allowNull: false,
-    },
-    
+   
+   },
+   instructions: {
+      type: DataType.TEXT,
+      allowNull: false,
+   },
+  },
+   { 
     sequelize,
     freezeTableName: true,
     underscored: true,
     modelName: 'QC',
-  
-);
+  }
+   );
 
 module.exports = User;
-
