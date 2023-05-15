@@ -2,12 +2,11 @@ const express = require('express');
 const sequelize = require('./config/connection');
 const path = require("path");
 const exphbs = require('express-handlebars');
-
-
 const PORT = process.env.PORT || 3001;
 const app = express();
 
 app.use(express.static(path.join(__dirname, '/public')));
+app.use(controllers);
 
 const hbs = exphbs.create({});
 
