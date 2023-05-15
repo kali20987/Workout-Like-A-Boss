@@ -1,9 +1,9 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-class muscleGroup extends Model {}
+class MuscleGroup extends Model {}
 
-muscleGroup.init(
+MuscleGroup.init(
   {
     id: {
       type: DataTypes.INTEGER,
@@ -11,13 +11,22 @@ muscleGroup.init(
       primaryKey: true,
       autoIncrement: true,
     },
-
-    muscleGroup: {
+    exerciseTitle: {
       type: DataTypes.STRING,
       allowNull: false,
     },
+    instructions: {
+      type: DataTypes.TEXT,
+      allowNull: false,
+    },
+    workout_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: 'workout',
+        key: 'id',
+      },
+    },
   },
-
   {
     sequelize,
     freezeTableName: true,
@@ -26,4 +35,4 @@ muscleGroup.init(
   }
 );
 
-module.exports = muscleGroup;
+module.exports = MuscleGroup;
