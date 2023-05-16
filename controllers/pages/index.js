@@ -1,32 +1,25 @@
 const router = require('express').Router();
-const {MuscleGroup, Workout } = require('../../models');
+const { MuscleGroup, Workout } = require('../../models');
 
 // GET all MuscleGroup for homepage
 router.get('/', async (req, res) => {
   try {
-    const dbMuscleGroupData = await MuscleGroup.findAll({
-      include: [
-        {
-          model: Workout,
-          attributes: ['muscleGroup'],
-        },
-      ],
-    });
+    const dbMuscleGroupData = await MuscleGroup.findAll();
+    const muscleGroups = dbMuscleGroupData.map((muscleGroup) =>
+    muscleGroup.get({ plain: true }));
 
-    const MuscleGroups = dbMuscleGroupData.map((MuscleGroup) =>
-    MuscleGroup.get({ plain: true })
-    );
+    console.log(muscleGroups);
 
-    res.render('homepage', {
-      MuscleGroups,
-    });
+    res.render('homepage', {muscleGroups});
+
   } catch (err) {
     console.log(err);
     res.status(500).json(err);
   }
 });
 
-// GET one MuscleGroup
+
+// GET one MuscleGroup's set of workouts
 router.get('/workout/:id', async (req, res) => {
   try {
     const dbMuscleGroupData = await MuscleGroup.findByPk(req.params.id, {
@@ -40,9 +33,8 @@ router.get('/workout/:id', async (req, res) => {
         },
       ],
     });
-
-    const MuscleGroup = dbMuscleGroupData.get({ plain: true });
-    res.render('workout', { MuscleGroup });
+    const muscleGroup = dbMuscleGroupData.get({ plain: true });
+    res.render('workout', { muscleGroup });
   } catch (err) {
     console.log(err);
     res.status(500).json(err);
@@ -50,4 +42,3 @@ router.get('/workout/:id', async (req, res) => {
 });
 
 module.exports = router;
-
