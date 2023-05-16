@@ -1,12 +1,14 @@
-const Workout = require('./workout');
-const MuscleGroup = require('./muscleGroup');
+const Workout = require('./muscleGroup');
+const MuscleGroup = require('./workout');
 
-Workout.hasMany(MuscleGroup, {
-    foreignKey: 'workout_id'
+MuscleGroup.hasMany(Workout, {
+    foreignKey: 'musclegroup_id'
 })
 
-MuscleGroup.belongsTo(Workout, {
-    foreignKey: 'workout_id'
+Workout.belongsTo(MuscleGroup, {
+    foreignKey: 'musclegroup_id'
 })
 
-module.exports = { Workout, MuscleGroup };
+module.exports = { MuscleGroup, Workout };
+
+
