@@ -1,6 +1,5 @@
 const { MuscleGroup } = require('../models');
 
-
 const muscleGroupData = [
     {
         exerciseTitle: 'Hip Trusts',
@@ -14,7 +13,7 @@ const muscleGroupData = [
     },
     {
         exerciseTitle: 'Bulgarian Spilt Squad',
-        instructions: '1. Place a step or a box behind you and stand up tall. Position your right foot on top of the step, bend your knees and lower the hips until your left thigh is parallel to the floor. Return to the starting position and repeat. Switch legs..',
+        instructions: '1. Place a step or a box behind you and stand up tall.Position your right foot on top of the step, bend your knees and lower the hips until your left thigh is parallel to the floor. Return to the starting position and repeat. Switch legs..',
         workout_id: 1
     },
     {
@@ -25,7 +24,7 @@ const muscleGroupData = [
     {
         exerciseTitle: 'Hamstring Curls',
         instructions: `Stand with your feet hip-width apart. Place your hands on your waist or on a chair for balance. Slowly bend your right knee, bringing your heel toward your butt. Keep your thighs parallel. Slowly lower your foot. Complete 12 to 15 reps. Repeat with the other leg.`,
-        workoutp_id: 1
+        workout_id: 1
     },
     {
         exerciseTitle: 'Bench Press',
@@ -136,4 +135,3 @@ const muscleGroupData = [
 const seedMuscleGroupData = () => MuscleGroup.bulkCreate(muscleGroupData)
 
 module.exports = seedMuscleGroupData;
-
