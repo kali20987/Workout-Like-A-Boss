@@ -3,6 +3,7 @@ const sequelize = require('../config/connection');
 
 class Workout extends Model {}
 
+
 Workout.init(
   {
     id: {
