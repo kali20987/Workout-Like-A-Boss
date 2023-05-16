@@ -132,3 +132,4 @@ const muscleGroupData = [
 const seedMuscleGroupData = () => MuscleGroup.bulkCreate(muscleGroupData)
 
 module.exports = seedMuscleGroupData;
+
