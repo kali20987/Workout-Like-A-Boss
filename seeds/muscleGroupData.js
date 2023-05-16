@@ -1,5 +1,6 @@
 const { MuscleGroup } = require('../models');
 
+
 const muscleGroupData = [
     {
         exerciseTitle: 'Hip Trusts',
