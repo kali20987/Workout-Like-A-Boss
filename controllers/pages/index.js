@@ -8,7 +8,7 @@ router.get('/', async (req, res) => {
       include: [
         {
           model: Workout,
-          attributes: ['exerciseTitle'],
+          attributes: ['muscleGroup'],
         },
       ],
     });
@@ -27,7 +27,7 @@ router.get('/', async (req, res) => {
 });
 
 // GET one MuscleGroup
-router.get('/MuscleGroup/:id', async (req, res) => {
+router.get('/workout/:id', async (req, res) => {
   try {
     const dbMuscleGroupData = await MuscleGroup.findByPk(req.params.id, {
       include: [
@@ -42,25 +42,9 @@ router.get('/MuscleGroup/:id', async (req, res) => {
     });
 
     const MuscleGroup = dbMuscleGroupData.get({ plain: true });
-    res.render('MuscleGroup', { MuscleGroup });
+    res.render('workout', { MuscleGroup });
   } catch (err) {
     console.log(err);
     res.status(500).json(err);
   }
 });
-
-// GET one Workout
-router.get('/Workout/:id', async (req, res) => {
-  try {
-    const dbWorkoutData = await Workout.findByPk(req.params.id);
-
-    const Workout = dbWorkoutData.get({ plain: true });
-
-    res.render('Workout', { Workout });
-  } catch (err) {
-    console.log(err);
-    res.status(500).json(err);
-  }
-});
-
-module.exports = router;
