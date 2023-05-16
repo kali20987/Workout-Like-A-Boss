@@ -52,28 +52,28 @@ const muscleGroupData = [
         workout_id: 1
     },
     {
-        exerciseTitle: 'Front Squad',
-        instructions: ``,
+        exerciseTitle: 'Front Squat',
+        instructions: `Position barbell in a squat rack at about  collarbone height. Once close to the barbell position your feet just outside of shoulder-width with your toes pointed slightly outward. Safely set barbell on shoulders while grabing the barbell with index fingers to prevent it from sliding forward. Elbows should be pointing high and forward. Squat down slowly until you reach the crease of your hip. Using your legs strength push up to stand  back up keeping the barbell on you shoulders and a straight back. `,
         workout_id: 1
     },
     {
         exerciseTitle: 'Goblet Squat',
-        instructions: ``,
+        instructions: `hold the weight in front of your chest with both hands. As you squat down, your elbows will track between your knees while the weight follows`,
         workout_id: 1
     },
     {
         exerciseTitle: 'Quad Extensions',
-        instructions: ``,
+        instructions: `Adjust machine to you can sit with your back flat against the support and your knees bent 90 degrees.Hold the weight in front of your chest with both hands. As you squat down, your elbows will track between your knees while the weight follows.`,
         workout_id: 1
     },   
     {
-        exerciseTitle: 'Calf Raises',
-        instructions: ``,
+        exerciseTitle: 'Standing Calf Raises',
+        instructions: `hold a dumbbell in each hand and stand with your feet about shoulder-width apart. Let your arms hang straight below your shoulders. Rise up onto your toes, then slowly return to the starting position. `,
         workout_id: 1
     },   
     {
-        exerciseTitle: 'Lunges',
-        instructions: ``,
+        exerciseTitle: 'Forward Lunges',
+        instructions: `start by standing upright with your feet slightly apart, then take a large step forward. Lower your body until your front thigh is parallel to the floor. Your front knee stays over your toes. Next, press up through your front heel to return to a standing position.`,
         workout_id: 1
     },    
     {
