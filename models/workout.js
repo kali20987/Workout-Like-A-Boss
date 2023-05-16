@@ -11,13 +11,23 @@ Workout.init(
       primaryKey: true,
       autoIncrement: true,
     },
-
-    muscleGroup: {
+    exerciseTitle: {
       type: DataTypes.STRING,
-      allowNull: false,
+      // allowNull: false,
+    },
+    instructions: {
+      type: DataTypes.TEXT,
+      // allowNull: false,
+    },
+    musclegroupId: {
+      type: DataTypes.INTEGER,
+      // allowNull: false,
+      references: {
+        model: 'musclegroup',
+        key: 'id',
+      },
     },
   },
-
   {
     sequelize,
     freezeTableName: true,
