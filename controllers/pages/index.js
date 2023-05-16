@@ -50,3 +50,4 @@ router.get('/workout/:id', async (req, res) => {
 });
 
 module.exports = router;
+
