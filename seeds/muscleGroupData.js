@@ -24,37 +24,37 @@ const muscleGroupData = [
     },
     {
         exerciseTitle: 'Hamstring Curls',
-        instructions: ``,
+        instructions: `Stand with your feet hip-width apart. Place your hands on your waist or on a chair for balance. Slowly bend your right knee, bringing your heel toward your butt. Keep your thighs parallel. Slowly lower your foot. Complete 12 to 15 reps. Repeat with the other leg.`,
         workout_id: 1
     },
     {
         exerciseTitle: 'Bench Press',
-        instructions: ``,
+        instructions: `Lie on your back on a flat bench. Press your feet firmly into the ground and keep your hips on the bench throughout the entire movement. Keep your core engaged and maintain a neutral spine position throughout the movement. Slowly lift the bar or dumbbells off the rack, if using.`,
         workout_id: 1
     },  
     {
         exerciseTitle: 'Overhead Press',
-        instructions: ``,
+        instructions: `While keeping your entire body tight, press the bar overhead. Keep the bar as close to your face (without hitting it) as possible. Once the bar passes your forehead, move your body back under the bar by driving your torso forward and back into a standing position.`,
         workout_id: 1
     },
     {
         exerciseTitle: 'Lateral Raises',
-        instructions: ``,
+        instructions: `Grab a set of dumbbells and stand straight. With your palms facing down, lift the dumbbells and raise your arms out to the sides. Once your elbows are at shoulder height, pause, and then slowly lower the arms back to the initial position. Repeat.`,
         workout_id: 1
     },
     {
         exerciseTitle: 'Front Raises',
-        instructions: ``,
+        instructions: `Stand with good posture and a dumbbell in each hand, by your sides. Keeping your arms straight, raise one dumbbell forwards up to shoulder height, lower it with control. Repeat on the other side and keep alternating for the duration of the exercise.`,
         workout_id: 1
     },
     {
         exerciseTitle: 'Overhead Tri Extensions',
-        instructions: ``,
+        instructions: `Stand with your feet staggered while holding a pair of dumbbells directly overhead, with your palms facing each other and the weights touching. Without moving your upper arms, lower the weights behind your head. Keep the dumbbells pressed together the whole time.`,
         workout_id: 1
     },
     {
         exerciseTitle: 'Front Squat',
-        instructions: `Position barbell in a squat rack at about  collarbone height. Once close to the barbell position your feet just outside of shoulder-width with your toes pointed slightly outward. Safely set barbell on shoulders while grabing the barbell with index fingers to prevent it from sliding forward. Elbows should be pointing high and forward. Squat down slowly until you reach the crease of your hip. Using your legs strength push up to stand  back up keeping the barbell on you shoulders and a straight back. `,
+        instructions: `Position barbell in a squat rack at about  collarbone height. Once close to the barbell position your feet just outside of shoulder-width with your toes pointed slightly outward. Safely set barbell on shoulders while grabing the barbell with index fingers to prevent it from sliding forward. Elbows should be pointing high and forward. Squat down slowly until you reach the crease of your hip. Using your legs strength push up to stand  back up keeping the barbell on you shoulders and a straight back. `,
         workout_id: 1
     },
     {
@@ -64,7 +64,7 @@ const muscleGroupData = [
     },
     {
         exerciseTitle: 'Quad Extensions',
-        instructions: `Adjust machine to you can sit with your back flat against the support and your knees bent 90 degrees.Hold the weight in front of your chest with both hands. As you squat down, your elbows will track between your knees while the weight follows.`,
+        instructions: `Adjust machine to you can sit with your back flat against the support and your knees bent 90 degrees.Hold the weight in front of your chest with both hands. As you squat down, your elbows will track between your knees while the weight follows.`,
         workout_id: 1
     },   
     {
@@ -79,7 +79,7 @@ const muscleGroupData = [
     },    
     {
         exerciseTitle: 'Revers Curls',
-        instructions: ``,
+        instructions: `Stand up with your back straight, shoulders back, and chest lifted. Grip a set of dumbbells with your palms facing down (pronated grip) and rest the weights on the front of your thighs. Exhale and bend your elbows to lift the weights toward your shoulders. Lift the weights until you feel a complete biceps contraction.`,
         workout_id: 1
     },    
     {
