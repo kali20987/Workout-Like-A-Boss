@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const {MuscleGroup, Workout } = require('../../models');
+const { MuscleGroup, Workout } = require('../../models');
 
 // GET all MuscleGroup for homepage
 router.get('/', async (req, res) => {
@@ -12,20 +12,17 @@ router.get('/', async (req, res) => {
         },
       ],
     });
-
-    const MuscleGroups = dbMuscleGroupData.map((MuscleGroup) =>
-    MuscleGroup.get({ plain: true })
+    const muscleGroups = dbMuscleGroupData.map((muscleGroup) =>
+    muscleGroup.get({ plain: true })
     );
-
     res.render('homepage', {
-      MuscleGroups,
+      muscleGroups,
     });
   } catch (err) {
     console.log(err);
     res.status(500).json(err);
   }
 });
-
 // GET one MuscleGroup
 router.get('/workout/:id', async (req, res) => {
   try {
@@ -40,9 +37,8 @@ router.get('/workout/:id', async (req, res) => {
         },
       ],
     });
-
-    const MuscleGroup = dbMuscleGroupData.get({ plain: true });
-    res.render('workout', { MuscleGroup });
+    const muscleGroup = dbMuscleGroupData.get({ plain: true });
+    res.render('workout', { muscleGroup });
   } catch (err) {
     console.log(err);
     res.status(500).json(err);
