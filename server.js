@@ -4,12 +4,10 @@ const path = require("path");
 const exphbs = require('express-handlebars');
 const models = require ("./models");
 
-
 const PORT = process.env.PORT || 3001;
 const app = express();
 
 app.use(express.static(path.join(__dirname, '/public')));
-// app.use(controllers);
 
 const hbs = exphbs.create({});
 

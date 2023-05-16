@@ -13,15 +13,15 @@ Workout.init(
     },
     exerciseTitle: {
       type: DataTypes.STRING,
-      allowNull: false,
+      // allowNull: false,
     },
     instructions: {
       type: DataTypes.TEXT,
-      allowNull: false,
+      // allowNull: false,
     },
     musclegroupId: {
       type: DataTypes.INTEGER,
-      allowNull: false,
+      // allowNull: false,
       references: {
         model: 'musclegroup',
         key: 'id',

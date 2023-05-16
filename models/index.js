@@ -1,5 +1,5 @@
-const Workout = require('./muscleGroup');
-const MuscleGroup = require('./workout');
+const Workout = require('./workout');
+const MuscleGroup = require('./muscleGroup');
 
 MuscleGroup.hasMany(Workout, {
     foreignKey: 'musclegroup_id'
