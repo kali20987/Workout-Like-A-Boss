@@ -34,11 +34,17 @@ router.get('/workout/:id', async (req, res) => {
       ],
     });
     const muscleGroup = dbMuscleGroupData.get({ plain: true });
-    res.render('workout', { muscleGroup });
+    console.log(muscleGroup)
+    res.render('workout', muscleGroup );
   } catch (err) {
     console.log(err);
     res.status(500).json(err);
   }
 });
+
+// renders the review page
+router.get('/review', (req, res) => {
+  res.render('review');
+})
 
 module.exports = router;
