@@ -5,6 +5,9 @@ body {
 
 }
 
+a {
+    text: white !important;
+}
 
 h2{
     font-size: 2.4rem;
@@ -19,13 +22,15 @@ h2 > span {
     font-weight: 500;
 }
 
-.container > * {
-    width: 100%;
+.container-fluid {
+    padding-left: 0px;
+    padding-right: 0px;
 }
 
 .card {
     transition: all 0.3s;
     box-shadow: black;
+    margin-left: 5px;
 }
 
 .card:hover {
@@ -34,11 +39,22 @@ h2 > span {
     box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
 }
 
+.navbar {
+    padding-left: 10px;
+    padding-right: 10px; 
+}
+
 .nav-link:hover {
     transform: scale(1.01);
     cursor: pointer;
     box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+    
 }
+
+.dropdown-item:hover {
+    background-color: lightblue;
+    color: red;
+} 
 
 .card[disabled]:hover {
     cursor: not-allowed;
@@ -53,9 +69,6 @@ h2 > span {
 }
 
 
-body {
-    background-color: rgb(239, 239, 244);
-}
 
 .muscleGroup{
     display: flex;
