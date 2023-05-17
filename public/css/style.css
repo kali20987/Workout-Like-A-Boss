@@ -26,13 +26,6 @@ body {
     text-align: center;
 }
 
-#reviewBody {
-    display: flex;
-    justify-content: center;
-    margin: 4vb; 
-}
-
-
 .workout-btn{
     padding: 10px;
     border-radius: 15px;
@@ -48,4 +41,20 @@ body {
     box-shadow:0 0.4rem 1.4rem 0 rgb(194, 146, 25);
     transform: translateY(-0.1rem);
     transition: transform 150ms;
+}
+
+#allReviews {
+    margin: 2vb;
+}
+
+#reviewCards {
+    margin: 4vb;
+    display: flex;
+    justify-content: center;
+}
+
+#reviewBody {
+    display: flex;
+    justify-content: center;
+    margin: 4vb; 
 }
