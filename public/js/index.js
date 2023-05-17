@@ -1,4 +1,3 @@
-//console.log('hello')
 
 //const userReview = document.getElementById('userReview')
 
