@@ -13,7 +13,7 @@ const workoutData = [
     },
     {
         exerciseTitle: 'Bulgarian Spilt Squad',
-        instructions: '1. Place a step or a box behind you and stand up tall.Position your right foot on top of the step, bend your knees and lower the hips until your left thigh is parallel to the floor. Return to the starting position and repeat. Switch legs..',
+        instructions: 'Place a step or a box behind you and stand up tall.Position your right foot on top of the step, bend your knees and lower the hips until your left thigh is parallel to the floor. Return to the starting position and repeat. Switch legs..',
         musclegroup_id: 1
     },
     {
