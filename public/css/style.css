@@ -25,3 +25,20 @@ body {
 .workout-instructions p {
     text-align: center;
 }
+
+.workout-btn{
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 25px;
+    background-color:rgb(155, 154, 153);;
+    margin-top: 1vb;
+    margin-bottom: 1vb;
+    margin-left: 50%;
+    
+}
+.workout-btn:hover {
+    cursor: pointer;
+    box-shadow:0 0.4rem 1.4rem 0 rgb(194, 146, 25);
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+}
