@@ -2,12 +2,13 @@ body {
     background-color: rgb(130, 130, 138);
     font-size: 62.5%;
     padding-top: 56px;
+    min-height: 100vh;
 }
 
 
-a {
+/* a {
     text: white !important;
-}
+} */
 
 h2{
     font-size: 2.4rem;
@@ -23,8 +24,8 @@ h2 > span {
 }
 
 .container-fluid {
-    padding-left: 0px;
-    padding-right: 0px;
+    overflow: hidden;
+    box-sizing: border-box;
 }
 
 .card {
@@ -41,7 +42,8 @@ h2 > span {
 
 .navbar {
     padding-left: 10px;
-    padding-right: 10px; 
+    padding-right: 10px;
+    /* padding-bottom: 1vh;  */
 }
 
 .nav-link:hover {
@@ -62,9 +64,13 @@ h2 > span {
 }
 
 .footer {
-    margin-top: auto;
-    padding-top: 0%;
-    margin-bottom: none;
+    height: 50px;
+    margin-top: -50px;
+}
+
+#sticky-footer{
+    position: sticky;
+    top: 100%;
 }
 
 #muscleGroup{
@@ -111,12 +117,12 @@ h2 > span {
     background-color:rgb(49, 48, 50);
     margin-top: 1vb;
     margin-bottom: 1vb;
-    margin-left: 50%;
+    position: relative;
 }
 
 .workout-btn:hover {
     cursor: pointer;
-    box-shadow:0 0.5rem 1.4rem 0 rgb(201, 173, 230);
+    box-shadow:0 0.5rem 1.4rem 0  lightblue;
     transform: translateY(-0.1rem);
     transition: transform 150ms;
 }
