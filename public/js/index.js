@@ -13,7 +13,7 @@ const reviewSubmission = async (event) => {
         method: "POST",
         body: JSON.stringify({
             reviewcontent: reviewValue,
-            //username: usernameValue,
+            username: usernameValue,
         }),
         headers: { 'Content-Type': 'application/json' },
     })
