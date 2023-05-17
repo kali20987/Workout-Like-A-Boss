@@ -4,9 +4,10 @@ const { Review } = require('../../models');
 
 
 router.post('/review', async (req, res) => {
-    const { reviewcontent: reviewContent } = req.body;
+    const { reviewcontent: reviewContent, username: username } = req.body;
     const userReview = await Review.create({
-        reviewcontent: reviewContent
+        reviewcontent: reviewContent,
+        username: username
     });
 
     res.json(userReview);

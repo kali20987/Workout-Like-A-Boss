@@ -42,3 +42,19 @@ body {
     transform: translateY(-0.1rem);
     transition: transform 150ms;
 }
+
+#allReviews {
+    margin: 2vb;
+}
+
+#reviewCards {
+    margin: 4vb;
+    display: flex;
+    justify-content: center;
+}
+
+#reviewBody {
+    display: flex;
+    justify-content: center;
+    margin: 4vb; 
+}
