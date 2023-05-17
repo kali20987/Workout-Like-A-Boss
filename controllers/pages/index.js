@@ -41,4 +41,9 @@ router.get('/workout/:id', async (req, res) => {
   }
 });
 
+// renders the review page
+router.get('/review', (req, res) => {
+  res.render('review');
+})
+
 module.exports = router;
