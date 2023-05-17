@@ -1,6 +1,3 @@
-
-//const userReview = document.getElementById('userReview')
-
 const reviewSubmission = async (event) => {
      event.preventDefault();
 
@@ -17,6 +14,7 @@ const reviewSubmission = async (event) => {
         }),
         headers: { 'Content-Type': 'application/json' },
     })
+
 
     if(post.ok) {
         alert("Your review has been sent. Thank you!");
