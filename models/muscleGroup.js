@@ -27,3 +27,4 @@ MuscleGroup.init(
 );
 
 module.exports = MuscleGroup;
+
