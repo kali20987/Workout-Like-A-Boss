@@ -1,9 +1,10 @@
 const reviewSubmission = async (event) => {
      event.preventDefault();
 
-    const reviewValue = document.getElementById('review-input').value.trim();
+     console.log('before leave-review.value');
+    reviewValue = document.getElementById('commentTextarea').value;
     console.log(reviewValue);
-    const usernameValue = document.getElementById('usernameInput').value.trim();
+    usernameValue = document.getElementById('usernameInput').value;
     console.log(usernameValue);
 
     const post = await fetch('/api/review', {
