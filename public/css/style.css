@@ -132,20 +132,9 @@ h2 > span {
     transition: transform 150ms;
 }
 
-#allReviews {
-    margin: 2vb;
-}
-
-#reviewCards {
-    margin: 4vb;
-    display: flex;
-    justify-content: center;
-}
-
 #reviewBody {
-    display: flex;
-    justify-content: center;
-    margin: 4vb; 
+    margin: 6vb 30vb 6vb; 
+    align-items: center;
 }
 
 #userReview {
@@ -154,4 +143,12 @@ h2 > span {
 
 #usernameInput {
     width: 440px;
+}
+
+#leave-review {
+    font-size: 2.4rem;
+}
+
+#usernameInput {
+    font-size: 1.2rem;
 }
