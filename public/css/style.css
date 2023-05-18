@@ -9,6 +9,11 @@ body {
     text: white !important;
 } */
 
+#muscleCard {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 h2{
     font-size: 2.4rem;
     color: black;
