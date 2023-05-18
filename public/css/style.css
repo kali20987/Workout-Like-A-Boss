@@ -1,10 +1,9 @@
 body {
     background-color: rgb(130, 130, 138);
     font-size: 62.5%;
-    padding-top: 56px;
+    padding-top: 10vb;
     min-height: 100vh;
 }
-
 
 /* a {
     text: white !important;
@@ -103,10 +102,16 @@ h2 > span {
 }
 
 .go-back-btn {
-    padding: 2vb;
+    padding: 1vb;
     font-size: 20px;
     color: #fff;
     margin: 5vb;
+}
+
+#go-back-btn {
+    background-color:rgb(49, 48, 50);
+    border-radius: 15px;
+    color: #fff;
 }
 
 .workout-btn {
