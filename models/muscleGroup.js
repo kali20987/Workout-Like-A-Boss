@@ -15,11 +15,6 @@ MuscleGroup.init(
     muscleGroup: {
       type: DataTypes.STRING,
       allowNull: false,
-    },
-
-    images: {
-      type: DataTypes.TEXT,
-      allowNull: false,
     }
   },
 
