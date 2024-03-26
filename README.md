@@ -7,13 +7,13 @@
 * [Contribution](#contribution)
 
 ## Installation
-Run this command in your terminal: ```npm i ```
+After cloning the repo to your local machine, run this command in your terminal: ```npm i ```
 
 All of the dependencies are listed in the package.json file.
 
-In the terminal ensure that you are in the db folder and login to your mysql. Once you're in mysql, run the command: ```SOURCE schema.sql```
+In the terminal ensure that you are in the db folder and login to your mysql. Once you're in MySQL, run the command: ```SOURCE schema.sql```
 
-Quit out of mysql and cd back to the root level. Then run the following commands: 
+Quit out of MySQL and cd back to the root level. Then run the following commands: 
 * ```node server.js```
 * ```node seeds/index.js```
 
